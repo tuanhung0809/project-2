@@ -64,3 +64,19 @@ h4 {
 #adplayer.showPlayer {
     transition: all ease 0.5ms;
 }
+
+/* .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+    background: #cee0e0e0;
+    height: 4px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+    background: #cee0e0e0;
+    height: 4px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+    background: #cee0e0e0;
+    /* height: 4px; */
+/* } */ 
+
