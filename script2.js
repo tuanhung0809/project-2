@@ -1,34 +1,26 @@
-
-// Click songs to get id
-
-
-
-
-
-
 // console.log(ap);
 
 let listMusic = [
     {
-    name: 'OK',
+    name: 'ok',
     artist: 'BINZ',
     url: '01 Ok.m4a',
     cover: 'https://i.ytimg.com/vi/SNES5Y-tYxM/hqdefault.jpg'
 },
     {
-    name: 'HAI CHU DA TUNG',
+    name: 'hai chu da tung',
     artist: 'NHU VIET',
     url: 'Hai Chu Da Tung - Nhu Viet_ ACV.flac',
     cover: 'https://data.chiasenhac.com/data/cover/126/125532.jpg'
 },
     {
-    name: 'CON TRAI CUNG',
+    name: 'con trai cung',
     artist: 'BRAY, K-ICM',
     url: 'Con Trai Cung - K-ICM_ B Ray.m4a',
     cover: 'https://data.chiasenhac.com/data/cover/98/97679.jpg'
 },
 {
-    name: 'CON TRAI CUNG',
+    name: 'con trai cung',
     artist: 'BRAY, K-ICM',
     url: 'Con Trai Cung - K-ICM_ B Ray.m4a',
     cover: 'https://data.chiasenhac.com/data/cover/98/97679.jpg'
@@ -60,14 +52,16 @@ function displayMusic(listMusic) {
 
 displayMusic(listMusic)
 
-
-$(".album-poster").on('click', function(e){
+// Click songs to get id
+$(document).on('click','.album-poster', function(e){
     var dataSwitchedId = $(this).attr('data-switch');
     // console.log(dataSwitchedId);
     ap.list.switch(dataSwitchedId); //Change songs
     ap.play()
     $('#aplayer').addClass('showPlayer')
 });
+
+
 
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
@@ -76,15 +70,26 @@ const ap = new APlayer({
     audio: listMusic,
 });
 
+
+// console.log(document.getElementById('searchBar').value);
+console.log(ap.audio);
+
+
+
 function searchSongs() {
     let result = listMusic.filter(function(listMusic){
-        return listMusic.name.includes(document.getElementById('searchBar').value)
+        return listMusic.name.includes(document.getElementById('searchBar').value);
     })
-    displayMusic(result)
+    // console.dir(result);
+    displayMusic(result);
+    ap.list.clear();
+    ap.list.add(result);
 }
 
-function searchSongsEnter() {
+function searchSongsEnter(event) {
+    
     if (event.key === 'Enter') {
-        searchSongs()
+        event.preventDefault();
+        searchSongs();
     }
 }
