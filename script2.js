@@ -5,7 +5,7 @@ let listMusic = [
     name: 'ok',
     artist: 'BINZ',
     url: '01 Ok.m4a',
-    cover: 'https://i.ytimg.com/vi/SNES5Y-tYxM/hqdefault.jpg'
+    cover: 'https://data.chiasenhac.com/data/cover/115/114164.jpg'
 },
     {
     name: 'hai chu da tung',
@@ -69,11 +69,6 @@ const ap = new APlayer({
 
     audio: listMusic,
 });
-
-
-// console.log(document.getElementById('searchBar').value);
-console.log(ap.audio);
-
 
 
 function searchSongs() {
