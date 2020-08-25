@@ -1,3 +1,5 @@
+
+
 // console.log(ap);
 
 let listMusic =[
@@ -131,29 +133,6 @@ let listMusic =[
 ]
 
 
-// function displayMusic(listMusic) {
-//     let domMusics = document.getElementById('musicNewRelease');
-//     domMusics.innerHTML = '';
-//     let totalHTML = '<div class="row">'
-//     for (let i = 0; i < listMusic.length; i++) {
-//         const music = listMusic[i]
-//         let html = `
-//         <div class="col-md-3">
-//             <a href="javascript:void();" class="album-poster" data-switch="${i}">
-//                 <img src="${music['cover']}" alt="">
-//             </a>
-//             <h4>${music['name']}</h4>
-//             <p>${music['artist']}</p>
-//         </div>`;
-//         totalHTML += html;
-//         if (i%4 === 3) {
-//             totalHTML += `</div><div class="row">`;
-//         }
-//     }
-//     totalHTML += `</div>`;
-//     domMusics.innerHTML = totalHTML;
-// }
-
 function displayMusic(listMusic,genre) {
     let domMusics = document.getElementById('main-body');
     domMusics.innerHTML = '';
@@ -187,7 +166,8 @@ function displayMusic(listMusic,genre) {
 
 
 
-displayMusic(listMusic,'Recommended Musics')
+
+displayMusic(listMusic,'New Release')
 
 // Click songs to get id
 $(document).on('click','.album-poster', function(e){
@@ -213,7 +193,6 @@ function searchSongs() {
         return listMusic.name.includes(document.getElementById('searchBar').value);
     })
     // console.dir(result);
-    
     displayMusic(result,'Search Result');
     ap.list.clear();
     ap.list.add(result);
