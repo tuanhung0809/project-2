@@ -224,34 +224,34 @@ let listMusic =[
     cover:'https://data.chiasenhac.com/data/cover/112/111664.jpg'
 },
 {
-    name:'',
-    artist:'',
-    url: 'music/.mp3',
-    cover:''
+    name:'Một Nhà',
+    artist:'Da LAB',
+    url: 'music/Mot Nha - Da LAB.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/35/34197.jpg'
 },
 {
-    name:'',
-    artist:'',
-    url: 'music/.mp3',
-    cover:''
+    name:'Gác Lại Âu Lo',
+    artist:'Da LAB; Miu Lê',
+    url: 'music/Gac Lai Au Lo - Da LAB_ Miu Le.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/125/124649.jpg'
 },
 {
-    name:'',
-    artist:'',
-    url: 'music/.mp3',
-    cover:''
+    name:'Lạc Trôi',
+    artist:'Sơn Tùng M-TP',
+    url: 'music/Lac Troi - Son Tung M-TP.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/87/86272.jpg'
 },
 {
-    name:'',
-    artist:'',
-    url: 'music/.mp3',
-    cover:''
+    name:'Cố Giang Tình',
+    artist:'X2X',
+    url: 'music/Co Giang Tinh - X2X.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/119/118265.jpg'
 },
 {
-    name:'',
-    artist:'',
-    url: 'music/.mp3',
-    cover:''
+    name:'Thằng Điên',
+    artist:'JustaTee; Phương Ly',
+    url: 'music/Thang Dien - JustaTee_ Phuong Ly.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/96/95803.jpg'
 },
 
 ]
