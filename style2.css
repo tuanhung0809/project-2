@@ -5,7 +5,8 @@ body {
 
 img {
     width: 100%;
-    min-height: 250px;
+    min-height: 100px;
+    
 }
 
 .main {
@@ -65,16 +66,26 @@ h4 {
     transition: all ease 0.5ms;
 }
 #logo{
-    width: 10%;
-    min-height: 100px;
+    width: 5%;
     padding: 10px;
-
+   
 }
 #backgroud{
     background-color: rgb(10, 9, 14);
 }
 #home-name{
-    color: blue;
+    color: red;
+    text-align: right;
+    
+}
+#link-name{
+    color: red;
+}
+#the-loai{
+    color: red;
+}
+#new-name{
+
 }
 /* .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
     background: #cee0e0e0;

@@ -15,13 +15,13 @@ let listMusic =[
 },
     {
     name: 'con trai cưng',
-    artist: 'bray, k-cim',
+    artist: 'bray, k-icm',
     url: 'music/Con Trai Cung - K-ICM_ B Ray.m4a',
     cover: 'https://data.chiasenhac.com/data/cover/98/97679.jpg'
 },
     {
-    name: 'trời hôm nay nhiều mây cực!',
-    artist: 'den',
+    name: 'trời hôm nay nhiều mây cực',
+    artist: 'đen',
     url: 'music/Troi Hom Nay Nhieu May Cuc_ - Den.mp3',
     cover: 'https://data.chiasenhac.com/data/cover/126/125234.jpg'
 },
@@ -127,44 +127,45 @@ let listMusic =[
     url: 'music/Hon Ca Yeu - Duc Phuc.mp3',
     cover: 'https://data.chiasenhac.com/data/cover/116/115822.jpg'
 },
+{
+    name:'Cô Đơn Không Muốn Về Nhà',
+    artist:'Mr Siro',
+    url: 'music/Co Don Khong Muon Ve Nha - Mr Siro.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/115/114493.jpg'
+},
+{
+    name:'2 Phut Hon',
+    artist:' Phao',
+    url: 'music/2 Phut Hon - Phao.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+},
+{
+    name:'2 Phut Hon',
+    artist:' Phao',
+    url: 'music/2 Phut Hon - Phao.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+},
+{
+    name:'2 Phut Hon',
+    artist:' Phao',
+    url: 'music/2 Phut Hon - Phao.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+},
+{
+    name:'2 Phut Hon',
+    artist:' Phao',
+    url: 'music/2 Phut Hon - Phao.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+},
+
 
 ]
 
 
-// function displayMusic(listMusic) {
-//     let domMusics = document.getElementById('musicNewRelease');
-//     domMusics.innerHTML = '';
-//     let totalHTML = '<div class="row">'
-//     for (let i = 0; i < listMusic.length; i++) {
-//         const music = listMusic[i]
-//         let html = `
-//         <div class="col-md-3">
-//             <a href="javascript:void();" class="album-poster" data-switch="${i}">
-//                 <img src="${music['cover']}" alt="">
-//             </a>
-//             <h4>${music['name']}</h4>
-//             <p>${music['artist']}</p>
-//         </div>`;
-//         totalHTML += html;
-//         if (i%4 === 3) {
-//             totalHTML += `</div><div class="row">`;
-//         }
-//     }
-//     totalHTML += `</div>`;
-//     domMusics.innerHTML = totalHTML;
-// }
-
-function displayMusic(listMusic,genre) {
-    let domMusics = document.getElementById('main-body');
+function displayMusic(listMusic) {
+    let domMusics = document.getElementById('musicNewRelease');
     domMusics.innerHTML = '';
-    let totalHTML = `
-    <div class="row">
-        <div class="col-md-12">
-            <h2>${genre}</h2>
-        </div>
-    </div>
-    <div class="row">
-    `
+    let totalHTML = '<div class="row">'
     for (let i = 0; i < listMusic.length; i++) {
         const music = listMusic[i]
         let html = `
@@ -183,6 +184,36 @@ function displayMusic(listMusic,genre) {
     totalHTML += `</div>`;
     domMusics.innerHTML = totalHTML;
 }
+
+// function displayMusic(listMusic,genre) {
+//     let domMusics = document.getElementById('main-body');
+//     domMusics.innerHTML = '';
+//     let totalHTML = `
+//     <div class="row">
+//         <div class="col-md-12">
+//             <h2>${genre}</h2>
+//         </div>
+//     </div>
+//     <div class="row">
+//     `
+//     for (let i = 0; i < listMusic.length; i++) {
+//         const music = listMusic[i]
+//         let html = `
+//         <div class="col-md-3">
+//             <a href="javascript:void();" class="album-poster" data-switch="${i}">
+//                 <img src="${music['cover']}" alt="">
+//             </a>
+//             <h4>${music['name']}</h4>
+//             <p>${music['artist']}</p>
+//         </div>`;
+//         totalHTML += html;
+//         if (i%4 === 3) {
+//             totalHTML += `</div><div class="row">`;
+//         }
+//     }
+//     totalHTML += `</div>`;
+//     domMusics.innerHTML = totalHTML;
+// }
 
 
 
@@ -211,6 +242,8 @@ const ap = new APlayer({
 function searchSongs() {
     let result = listMusic.filter(function(listMusic){
         return listMusic.name.includes(document.getElementById('searchBar').value);
+        
+        
     })
     // console.dir(result);
     
@@ -224,5 +257,9 @@ function searchSongsEnter(event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         searchSongs();
+        
+
     }
 }
+
+
