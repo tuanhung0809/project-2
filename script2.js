@@ -134,10 +134,10 @@ let listMusic =[
     cover:'https://data.chiasenhac.com/data/cover/115/114493.jpg'
 },
 {
-    name:'2 Phut Hon',
-    artist:' Phao',
-    url: 'music/2 Phut Hon - Phao.mp3',
-    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+    name:'Do For Love',
+    artist:'B Ray_ AMee_ Masew',
+    url: 'music/Do For Love - B Ray_ AMee_ Masew.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116090.jpg'
 },
 {
     name:'2 Phut Hon',
@@ -146,18 +146,113 @@ let listMusic =[
     cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
 },
 {
-    name:'2 Phut Hon',
-    artist:' Phao',
-    url: 'music/2 Phut Hon - Phao.mp3',
-    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+    name:'Duyen Am ',
+    artist:'Hoang Thuy Linh',
+    url: 'music/Duyen Am - Hoang Thuy Linh.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/111/110870.jpg'
 },
 {
-    name:'2 Phut Hon',
-    artist:' Phao',
-    url: 'music/2 Phut Hon - Phao.mp3',
-    cover:'https://data.chiasenhac.com/data/cover/117/116813.jpg'
+    name:'Hanh Lang Cu Ha Nho',
+    artist:' Long Non La x Masew',
+    url: 'music/Hanh Lang Cu Ha Nho_ - Long Non La x Mas.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/115/114815.jpg'
 },
-
+{
+    name:'Em có nghe',
+    artist:'Kha',
+    url: 'music/Em Co Nghe - Kha.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116629.jpg'
+},
+{
+    name:'Khong-Yeu Dung Gay Thuong Nho',
+    artist:'LyLy-Karik',
+    url: 'music/Khong-Yeu-Dung-Gay-Thuong-Nho-LyLy-Karik.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/120/119821.jpg'
+},
+{
+    name:'Khoc Cung Em',
+    artist:'Mrsiro - Gray - WinD',
+    url: 'music/Khoc Cung Em - Mr_Siro_ Gray_ Wind [128kbps_MP3].mp3',
+    cover:'https://data.chiasenhac.com/data/cover/117/116275.jpg'
+},
+{
+    name:'Sao Anh Chua Ve Nha',
+    artist:'AMEE - Ricky Star',
+    url: 'music/Sao Anh Chua Ve Nha - AMEE_ Ricky Star.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/118/117057.jpg'
+},
+{
+    name:'Sợ rằng em biết anh còn yêu em',
+    artist:'Juun đặng dũng',
+    url: 'music/SoRangEmBietAnhConYeuEm-JuunDangDung-6217224.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/116/115678.jpg'
+},
+{
+    name:'Xa - Masew; APJ',
+    artist:'Masew',
+    url: 'music/Xa - Masew_ APJ.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/100/99010.jpg'
+},
+{
+    name:'Đủ Xa Tình Sẽ Cũ',
+    artist:'JSOL',
+    url: 'music/Du Xa Tinh Se Cu - JSOL.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/102/101521.jpg'
+},
+{
+    name:'Khong Sao Ma Em Day Roi',
+    artist:'Suni Ha Linh',
+    url: 'music/Khong Sao Ma Em Day Roi - Suni Ha Linh_.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/126/125572.jpg'
+},
+{
+    name:'Đố Em Biết Anh Đang Nghĩ Gì',
+    artist:'JustaTee; Đen; Biên',
+    url: 'music/Do Em Biet Anh Dang Nghi Gi - JustaTee_.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/95/94418.jpg'
+},
+{
+    name:'Hai Triệu Năm',
+    artist:'Đen; Biên',
+    url: 'music/Hai Trieu Nam - Den_ Bien.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/107/106262.jpg'
+},
+{
+    name:'3 1 0 7',
+    artist:'Duongg; Nâu',
+    url: 'music/3 1 0 7 - Duongg_ Nau.mp3',
+    cover:'https://data.chiasenhac.com/data/cover/112/111664.jpg'
+},
+{
+    name:'',
+    artist:'',
+    url: 'music/.mp3',
+    cover:''
+},
+{
+    name:'',
+    artist:'',
+    url: 'music/.mp3',
+    cover:''
+},
+{
+    name:'',
+    artist:'',
+    url: 'music/.mp3',
+    cover:''
+},
+{
+    name:'',
+    artist:'',
+    url: 'music/.mp3',
+    cover:''
+},
+{
+    name:'',
+    artist:'',
+    url: 'music/.mp3',
+    cover:''
+},
 
 ]
 
