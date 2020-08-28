@@ -352,7 +352,7 @@ function searchSongs() {
     let result = listMusic.filter(function(listMusic){
         return listMusic.name.includes(document.getElementById('searchBar').value);
     })
- 
+    
     displayMusic(result,'Search Result');
     ap.list.clear();
     ap.list.add(result);
@@ -372,7 +372,11 @@ function showGenre(n) {
         return listMusic.genre.includes(genre);
     })
     displayMusic(result,genre);
-
+    for (let i = 0; i < result.length; i++) {
+        result[i].artist = result[i].artist.toUpperCase()
+        result[i].name = result[i].name.toUpperCase()
+    }
+    ap.list.clear();
     ap.list.add(result);
 }
 
@@ -384,6 +388,11 @@ function showArtist(n) {
         return listMusic.artist.includes(artist);
     })
     displayMusic(result,artist);
+    for (let i = 0; i < result.length; i++) {
+        result[i].artist = result[i].artist.toUpperCase()
+        result[i].name = result[i].name.toUpperCase()
+    }
+    ap.list.clear();
     ap.list.add(result);
 }
 
