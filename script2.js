@@ -11,7 +11,7 @@ let listMusic =[
     {
     name: 'hai chu da tung',
     artist: 'nhu viet',
-    url: 'music/Hai Chu Da Tung - Nhu Viet_ ACV.flac',
+    url: 'music/Hai Chu Da Tung - Nhu Viet.mp3',
     cover: 'https://data.chiasenhac.com/data/cover/126/125532.jpg',
     genre: 'Ballad'
 },
@@ -99,13 +99,13 @@ let listMusic =[
     cover: 'https://data.chiasenhac.com/data/cover/124/123411.jpg',
     genre: 'Ballad'
 },
-    {
-    name: 'nơi này có anh',
-    artist: 'sơn tùng m-tp',
-    url: 'Noi Nay Co Anh - Son Tung M-TP.mp3',
-    cover: 'https://data.chiasenhac.com/data/cover/87/86272.jpg',
-    genre: 'Ballad'
-    },
+    // {
+    // name: 'nơi này có anh',
+    // artist: 'sơn tùng m-tp',
+    // url: 'NƠI NÀY CÓ ANH - OFFICIAL MUSIC VIDEO - SƠN TÙNG M-TP.mp3',
+    // cover: 'https://data.chiasenhac.com/data/cover/87/86272.jpg',
+    // genre: 'Ballad'
+    // },
 {
     name: 'em không sai chúng ta sai',
     artist: 'erik',
@@ -299,8 +299,8 @@ let listMusic =[
 ]
 
 for (let i = 0; i < listMusic.length; i++) {
-    listMusic[i].artist = listMusic[i].artist.toLowerCase()
-    listMusic[i].name = listMusic[i].name.toLowerCase()
+    listMusic[i].artist = listMusic[i].artist.toUpperCase()
+    listMusic[i].name = listMusic[i].name.toUpperCase()
 }
 
 function displayMusic(listMusic) {
@@ -329,11 +329,10 @@ function displayMusic(listMusic) {
 
 displayMusic(listMusic,'Recommended Musics')
 
-// Click songs to get id
 $(document).on('click','.album-poster', function(e){
     var dataSwitchedId = $(this).attr('data-switch');
-    // console.log(dataSwitchedId);
-    ap.list.switch(dataSwitchedId); //Change songs
+    
+    ap.list.switch(dataSwitchedId); 
     ap.play()
     $('#aplayer').addClass('showPlayer')
 });
@@ -350,7 +349,7 @@ const ap = new APlayer({
 
 function searchSongs() {
     let result = listMusic.filter(function(listMusic){
-        return listMusic.name.includes(document.getElementById('searchBar').value);
+        return listMusic.name.includes(document.getElementById('searchBar').value.toUpperCase());
     })
     
     displayMusic(result,'Search Result');
@@ -367,33 +366,31 @@ function searchSongsEnter(event) {
 }
 
 function showGenre(n) {
+    
     let genre = n.innerHTML
     let result = listMusic.filter(function(listMusic){
         return listMusic.genre.includes(genre);
     })
     displayMusic(result,genre);
-    for (let i = 0; i < result.length; i++) {
-        result[i].artist = result[i].artist.toUpperCase()
-        result[i].name = result[i].name.toUpperCase()
-    }
+    
     ap.list.clear();
     ap.list.add(result);
+    
 }
 
 
 function showArtist(n) {
-    let artist = n.innerHTML.toLowerCase()
-    console.log(artist);
+    
+    let artist = n.innerHTML.toUpperCase()
+
     let result = listMusic.filter(function(listMusic){
         return listMusic.artist.includes(artist);
     })
     displayMusic(result,artist);
-    for (let i = 0; i < result.length; i++) {
-        result[i].artist = result[i].artist.toUpperCase()
-        result[i].name = result[i].name.toUpperCase()
-    }
+    
     ap.list.clear();
     ap.list.add(result);
+    
 }
 
 function returnHome() {
