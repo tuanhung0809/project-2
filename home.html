@@ -19,32 +19,61 @@
     <!-- <h1></h1> -->
     <nav class="navbar navbar-expand-lg navbar-dark " id="backgroud">
         
-        <a href="file:///D:/project/project-2-music/home.html" target="_top" id="logo">
+        <div onclick="returnHome()" target="_top" id="logo">
         <img src="https://png.pngtree.com/png-clipart/20190515/original/pngtree-music-and-live-music-logo-with-neon-light-effect-vector-png-image_3669646.jpg" alt="">
-        </a>
-        <a class="navbar-brand" href="#" id="home-name">MUSIC</a>
+        </div>
+        <a class="navbar-brand" href="home.html" id="home-name">MUSIC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="#" id="home-name">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#" id="link-name">Link</a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="the-loai" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Thể loại
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                <a class="dropdown-item" href="#">Rap</a>
-                <a class="dropdown-item" href="#">Ca sĩ</a>
+                <button class="dropdown-item dropdown-item-genre" onclick="showGenre(this)">Rap</button>
+                <button class="dropdown-item dropdown-item-genre" onclick="showGenre(this)">Ballad</button>
+                <!-- <button class="dropdown-item" onclick="showRap()">Rap</button>
+                <button class="dropdown-item" onclick="showRap()">Rap</button>
+                <button class="dropdown-item" onclick="showRap()">Rap</button> -->
+                <!-- <a class="dropdown-item" href="#">Ca sĩ</a> -->
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
               </div>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="the-loai" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ca sĩ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                <button class="dropdown-item" onclick="showArtist(this)">Binz</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Nhu Viet</button>
+                <button class="dropdown-item" onclick="showArtist(this)">K-ICM</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Đen</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Vũ</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Thành Đồng</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Soobin Hoàng Sơn</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Touliver</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Jack</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Sơn Tùng M-Tp</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Erik</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Min</button>
+                <button class="dropdown-item" onclick="showArtist(this)">Kha</button>
+                
+                <div class="dropdown-divider"></div>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+              
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
