@@ -66,23 +66,23 @@ h4 {
     transition: all ease 0.5ms;
 }
 #logo{
-    width: 5%;
-    padding: 10px;
+    width: 6%;
+    padding: 0.5px;
    
 }
 #backgroud{
     background-color: rgb(10, 9, 14);
 }
 #home-name{
-    color: red;
+    color: rgb(240, 87, 49);
     text-align: right;
     
 }
 #link-name{
-    color: red;
+    color: rgb(240, 87, 49);
 }
 #the-loai{
-    color: red;
+    color: rgb(240, 87, 49);
 }
 #new-name{
 
@@ -101,4 +101,32 @@ h4 {
     background: #cee0e0e0;
     /* height: 4px; */
 /* } */ 
-
+footer {
+    background: #16222A;
+    background: rgb(10, 9, 14);
+    background: rgb(10, 9, 14);
+    color: white;
+    margin-top:100px;
+  }
+  
+  footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-middle {
+    padding-top: 1em;
+    color: rgb(240, 87, 49);
+  }
