@@ -448,3 +448,13 @@ function returnHome() {
 
 //Create playlist
 
+function fbTuanHung() {
+    window.location.href = "https://www.facebook.com/tuan.hung080999";
+}
+
+function fbVietHung() {
+    window.location.href = "https://www.facebook.com/viethung.phan.79025";
+}
+function fbTranGiang() {
+    window.location.href = "https://www.facebook.com/truonggiang0179";
+}
