@@ -84,9 +84,11 @@ h4 {
 #the-loai{
     color: red;
 }
-#new-name{
-
+#playlist{
+    color: red;
 }
+
+
 /* .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
     background: #cee0e0e0;
     height: 4px;

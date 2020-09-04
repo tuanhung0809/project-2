@@ -1,5 +1,3 @@
-// console.log(ap);
-
 let listMusic =[
     {
     name: 'ok',
@@ -303,10 +301,40 @@ for (let i = 0; i < listMusic.length; i++) {
     listMusic[i].name = listMusic[i].name.toUpperCase()
 }
 
-function displayMusic(listMusic) {
-    let domMusics = document.getElementById('musicNewRelease');
+// function displayMusic(listMusic) {
+//     let domMusics = document.getElementById('musicNewRelease');
+//     domMusics.innerHTML = '';
+//     let totalHTML = '<div class="row">'
+//     for (let i = 0; i < listMusic.length; i++) {
+//         const music = listMusic[i]
+//         let html = `
+//         <div class="col-md-3">
+//             <a href="javascript:void();" class="album-poster" data-switch="${i}">
+//                 <img src="${music['cover']}" alt="">
+//             </a>
+//             <h4>${music['name']}</h4>
+//             <p>${music['artist']}</p>
+//         </div>`;
+//         totalHTML += html;
+//         if (i%4 === 3) {
+//             totalHTML += `</div><div class="row">`;
+//         }
+//     }
+//     totalHTML += `</div>`;
+//     domMusics.innerHTML = totalHTML;
+// }
+
+function displayMusic(listMusic,genre) {
+    let domMusics = document.getElementById('main-body');
     domMusics.innerHTML = '';
-    let totalHTML = '<div class="row">'
+    let totalHTML = `
+    <div class="row">
+        <div class="col-md-12">
+            <h2>${genre}</h2>
+        </div>
+    </div>
+    <div class="row">
+    `
     for (let i = 0; i < listMusic.length; i++) {
         const music = listMusic[i]
         let html = `
@@ -324,8 +352,7 @@ function displayMusic(listMusic) {
     }
     totalHTML += `</div>`;
     domMusics.innerHTML = totalHTML;
-}
-
+} 
 
 displayMusic(listMusic,'Recommended Musics')
 
@@ -373,9 +400,15 @@ function showGenre(n) {
     })
     displayMusic(result,genre);
     
-    ap.list.clear();
-    ap.list.add(result);
+    $(document).on('click','.album-poster', function(e){
+        ap.list.clear();
+        ap.list.add(result);
+        var dataSwitchedId = $(this).attr('data-switch');
     
+        ap.list.switch(dataSwitchedId); 
+        ap.play()
+        $('#aplayer').addClass('showPlayer')
+    })
 }
 
 
@@ -387,12 +420,31 @@ function showArtist(n) {
         return listMusic.artist.includes(artist);
     })
     displayMusic(result,artist);
+    $(document).on('click','.album-poster', function(e){
+        ap.list.clear();
+        ap.list.add(result);
+        var dataSwitchedId = $(this).attr('data-switch');
     
-    ap.list.clear();
-    ap.list.add(result);
+        ap.list.switch(dataSwitchedId); 
+        ap.play()
+        $('#aplayer').addClass('showPlayer')
+    })
     
 }
 
 function returnHome() {
     displayMusic(listMusic,'Recommended Musics')
+    $(document).on('click','.album-poster', function(e){
+        ap.list.clear();
+        ap.list.add(listMusic);
+        var dataSwitchedId = $(this).attr('data-switch');
+    
+        ap.list.switch(dataSwitchedId); 
+        ap.play()
+        $('#aplayer').addClass('showPlayer')
+    })
 }
+
+
+//Create playlist
+
